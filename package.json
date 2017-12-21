@@ -1,0 +1,32 @@
+{
+  "name": "express-graphql-realworld-example-app",
+  "version": "1.0.0",
+  "description": "> ### Node Express GraphQL codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lujakob/node-express-graphql-realworld-example-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lujakob/node-express-graphql-realworld-example-app/issues"
+  },
+  "homepage": "https://github.com/lujakob/node-express-graphql-realworld-example-app#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "graphql": "^0.12.3",
+    "graphql-server-express": "^1.3.2",
+    "graphql-tools": "^2.14.1"
+  }
+}
