@@ -18,7 +18,7 @@ input UserRegisterInput {
 }
 
 type Query {
-  user: UserPayload
+  user(id: ID!): UserPayload
 }
 
 type Mutation {
