@@ -3,13 +3,26 @@ import {makeExecutableSchema, addMockFunctionsToSchema} from 'graphql-tools';
 import {resolvers} from './resolvers';
 
 const typeDefs = `
-type Post {
-  id: ID!
-  title: String
+type UserPayload {
+  username: String
+  email: String
+  token: String
+  bio: String
+  image: String
+}
+
+input UserRegisterInput {
+  email: String
+  password: String
+  username: String
 }
 
 type Query {
-  posts: [Post]
+  user: UserPayload
+}
+
+type Mutation {
+  userRegister(user: UserRegisterInput!): UserPayload  
 }
 `;
 
