@@ -22,7 +22,8 @@ type Query {
 }
 
 type Mutation {
-  userRegister(user: UserRegisterInput!): UserPayload  
+  userRegister(user: UserRegisterInput!): UserPayload
+  userLogin(email: String!, password: String!): UserPayload
 }
 `;
 
